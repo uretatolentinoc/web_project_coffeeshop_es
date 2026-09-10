@@ -27,7 +27,6 @@
           <li><a class="nav-link" href="#contact">Contactos</a></li>
         </ul>
       </nav>
-
       <div class="header-main">
         <h1 class="header-title">
           <span class="span-accent">Café de especialidad</span>en Triple Peaks
@@ -42,7 +41,6 @@
           alt="imagen de la cafeteria"
         />
       </div>
-
       <div class="header-info">
         <div class="header-hours">
           <p class="info-text">Horario:</p>
@@ -53,7 +51,58 @@
       </div>
     </header>
 
-    <main class="content"></main>
+    <main class="content">
+      <section class="reservation" id="reservation">
+        <h2 class="reservation_title">Reservar una mesa</h2>
+        <form class="form reservation_form">
+          <fieldset class="form_fieldset">
+            <label class="form_label" for="name">Nombre *</label>
+            <input
+              class="form_input"
+              type="text"
+              id="name"
+              placeholder="Nombre"
+              required
+            />
+            <label class="form_label" for="guests"
+              >Número de comensales *</label
+            >
+            <input
+              class="form_input"
+              type="number"
+              id="guests"
+              min="1"
+              max="8"
+              placeholder="1-8"
+              required
+            />
+            <label class="form_label" for="detetime">Fecha y Hora *</label>
+            <input
+              class="form_input"
+              type="detetime-local"
+              id="detetime"
+              required
+            />
+            <label class="form_label" for="email"
+              >Tu correo electrónico *</label
+            >
+            <input
+              class="form_input"
+              type="email"
+              id="email"
+              placeholder="email@email.com"
+              required
+            />
+          </fieldset>
+          <button class="form_bottom" type="submit">Reservar una mesa</button>
+          <label class="form_label form_label_type_checkbox">
+            <input type="checkbox" class="form_checkbox" required />
+            <span>Acepto los terminos de uso</span>
+          </label>
+        </form>
+      </section>
+    </main>
+
     <footer class="footer"></footer>
   </body>
 </html>
