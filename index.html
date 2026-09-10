@@ -23,8 +23,8 @@
           alt="imagen-logo"
         />
         <ul class="nav-links">
-          <li><a class="nav-link" href="#reserve">Reservar una mesa</a></li>
-          <li><a class="nav-link" href="#contact">Contactos</a></li>
+          <li><a class="nav-link" href="#reservation">Reservar una mesa</a></li>
+          <li><a class="nav-link" href="#contacts">Contactos</a></li>
         </ul>
       </nav>
       <div class="header-main">
@@ -47,7 +47,7 @@
           <p class="info-text">Lunes a Viernes (de 10:00h a 19:00h)</p>
           <p class="info-text">Sábados y Domingos (de 11:00 a 18:00h)</p>
         </div>
-        <p class="info-text">Avenida del Exito 200, Ciudad Triple Peaks</p>
+        <p class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
       </div>
     </header>
 
@@ -76,11 +76,11 @@
               placeholder="1-8"
               required
             />
-            <label class="form_label" for="detetime">Fecha y Hora *</label>
+            <label class="form_label" for="datetime">Fecha y Hora *</label>
             <input
               class="form_input"
-              type="detetime-local"
-              id="detetime"
+              type="datetime-local"
+              id="datetime"
               required
             />
             <label class="form_label" for="email"
@@ -94,7 +94,7 @@
               required
             />
           </fieldset>
-          <button class="form_bottom" type="submit">Reservar una mesa</button>
+          <button class="form_button" type="submit">Reservar una mesa</button>
           <label class="form_label form_label_type_checkbox">
             <input type="checkbox" class="form_checkbox" required />
             <span>Acepto los terminos de uso</span>
@@ -102,6 +102,52 @@
         </form>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer" id="contacts">
+      <div class="footer__circle"></div>
+      <div class="footer__top">
+        <img
+          class="footer__logo"
+          src="./imagees/logo_coffeeshop_light.svg"
+          alt="Logo de Triple Espresso"
+        />
+        <div class="footer__social">
+          <h2 class="footer__social-heading">Redes sociales</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./imagees/facebook_white.svg"
+                  alt="Icono de Facebook"
+                />
+                Facebook
+              </a>
+            </li>
+
+            <li class="footer__list-item">
+              <a
+                class="footer__social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="./imagees/instagram_white.svg"
+                  alt="Icono de Instagram"
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copyright">© 2026 Cristian Willyams</p>
+    </footer>
   </body>
 </html>
